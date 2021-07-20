@@ -1,1 +1,1 @@
-fdg
+import './style/main.scss'

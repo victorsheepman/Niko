@@ -1,0 +1,65 @@
+//Colors
+$grey:   #757575;
+$black:  #111111;
+$white:  #FFFFFF;
+$orange: #FA5400;
+
+//Funcion
+@function calculateRem($size) {
+    $font-1: ($size / 16) * 1rem;
+    @return $font-1;
+};
+
+@function porcentaje($width){
+   @return  $width * 100%/1366;
+};
+
+.subtitle-1{
+    //styleName: Subtitle 1;
+    font-family: Avenir;
+    font-size: 28px;
+    font-style: normal; 
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.body-1{
+    //styleName: Body 1/Roman;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.heavy{
+    //styleName: Body 1/Heavy;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+%boton{
+    height: 48px;
+    width: 366px;
+    border-radius: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //styleName: Button;
+    font-family: Avenir;
+    font-size: calculateRem(16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: calculateRem(16);
+    letter-spacing: 0em;
+    text-align: left;
+}
+

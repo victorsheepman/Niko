@@ -1,0 +1,61 @@
+.Header{
+    width: 100%;
+    height: 60px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__logo{
+        width: 60px;
+        height: 60px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__nav{
+        width: porcentaje(713);
+        height: 16px;
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none;
+        }
+    }
+    &__actions{
+        width: porcentaje(296);
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__search{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        border: none;
+        background-color: #F5F5F5;
+        padding-left: 40px;
+        
+    }
+    &__input{
+        position: relative;
+        width: 200px;
+        height: 40px;
+        img{
+            position: absolute;
+            top: 9px;
+            left: 16px;
+        }
+    }
+
+}

@@ -45,6 +45,15 @@ $orange: #FA5400;
     letter-spacing: 0em;
     text-align: left;
 }
+.button{
+    font-family: Avenir;
+    font-size: calculateRem(16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: calculateRem(16);
+    letter-spacing: 0em;
+    text-align: left;
+}
 %boton{
     height: 48px;
     width: 366px;
@@ -53,13 +62,11 @@ $orange: #FA5400;
     justify-content: center;
     align-items: center;
 
-    //styleName: Button;
-    font-family: Avenir;
-    font-size: calculateRem(16);
-    font-style: normal;
-    font-weight: 500;
-    line-height: calculateRem(16);
-    letter-spacing: 0em;
-    text-align: left;
+    @extend .button;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 

@@ -16,7 +16,7 @@ $orange: #FA5400;
 
 .subtitle-1{
     //styleName: Subtitle 1;
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: 28px;
     font-style: normal; 
     font-weight: 800;
@@ -27,7 +27,7 @@ $orange: #FA5400;
 }
 .body-1{
     //styleName: Body 1/Roman;
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -37,7 +37,7 @@ $orange: #FA5400;
 }
 .heavy{
     //styleName: Body 1/Heavy;
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -46,7 +46,7 @@ $orange: #FA5400;
     text-align: left;
 }
 .button{
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-size: calculateRem(16);
     font-style: normal;
     font-weight: 500;

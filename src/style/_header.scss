@@ -34,8 +34,8 @@
         justify-content: space-between;
         align-items: center;
         img{
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
         }
     }
     &__search{
@@ -55,6 +55,8 @@
             position: absolute;
             top: 9px;
             left: 16px;
+            width: 20px;
+            height: 20px;
         }
     }
 

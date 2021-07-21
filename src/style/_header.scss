@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    animation: 2s navbar 0.5s ease-in-out;
+
     &__logo{
         width: 60px;
         height: 60px;
@@ -60,4 +62,12 @@
         }
     }
 
+}
+@keyframes navbar {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px );
+    }
 }

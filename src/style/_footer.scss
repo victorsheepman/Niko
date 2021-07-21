@@ -1,0 +1,80 @@
+.footer{
+    width: 100%;
+    height: 352px;
+    background-color: $black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+    &__options{
+        width: 40%;
+        height: 184px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        li{
+            list-style: none;
+        }
+    }
+    &__help{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            color:$grey;
+        }
+    }
+   
+    li:first-child{
+        color: white;
+    }
+    &__content{
+        width: porcentaje(734);
+        height: 224px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__about{
+        width:19%;
+        height: 184px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            color:$grey;
+        }
+    }
+    &__icons{
+        width: 264px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        figure{
+            width: 48px;
+            height: 48px;
+            background-color: $grey;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    animation-name: footer;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transform: translateY(100%);
+}
+@keyframes footer {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

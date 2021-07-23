@@ -1,0 +1,17 @@
+.galery{
+    width: 810px;
+    height: 1008px;
+    &__up{
+        width: 100%;
+        height: 50%;
+        display: flex;
+    }
+    &__down{
+        @extend .galery__up;
+    }
+    figure{
+        width: 50%;
+        height: 100%;
+    }
+
+}

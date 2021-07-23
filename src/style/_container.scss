@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    height: 1791px;
+    opacity: 0;
+    transform: translateX(100%);
+    //animacion
+    animation-name: container;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    &__main{
+        width: 100%;
+        height: 1176px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+    }
+}
+@keyframes container {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

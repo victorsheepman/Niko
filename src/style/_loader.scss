@@ -9,6 +9,8 @@
     z-index: 3;
     animation: loader 2s linear forwards;
     top: 0;
+    bottom: 0;
+    position: fixed;
     img{
         position: absolute;
         top: 40%;

@@ -56,11 +56,14 @@ $orange: #FA5400;
 }
 %boton{
     height: 48px;
-    width: 366px;
+    width: 100%;
     border-radius: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    background-color: $white;
+    cursor: pointer;
 
     @extend .button;
 }

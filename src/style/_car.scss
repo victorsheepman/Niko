@@ -1,0 +1,148 @@
+.car{
+    width: 100%;
+    height: 714px;
+    padding-top: 40px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    animation-name: car;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+    &__data{ 
+        width: porcentaje(681);
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__title{
+            padding: 16px;
+            width: 100%;
+            height: 98px;
+            h2{
+                color: $orange;
+            }
+            span{
+                color: $grey;
+            }
+        }
+        &__buy{
+            width: 342px;
+            height: 202px;
+            //background-color: bisque;
+            &--grid{
+                display: grid;
+                grid-template-columns: 128px 16px 163px 17px;
+                grid-template-rows: 108px 20px 24px ;
+            }
+            figure{
+                grid-column: 1/2;
+                grid-row:1/3 ;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &__info{
+                grid-column: 3/4;
+                grid-row: 1/2;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                span, p{
+                    color: $grey;
+                }
+               
+            }
+            &__enlaces{
+                grid-column: 3/6;
+                grid-row: 3/5;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                color: $grey;
+                font-family: Avenir;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+        }
+    }
+    &__resumen{
+        width: porcentaje(391);
+        min-width: 391px; 
+        height: 382px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__price{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            @extend .body-1;
+            &--total{
+                @extend .car__resumen__price, .heavy;
+                height: 56px;
+                border-top: 1px solid $grey;
+                border-bottom: 1px solid $grey;
+                align-items: center;
+            }
+        }
+        &__buttons{
+            width: 100%;
+            height: auto;
+            &__btn{
+                @extend %boton;
+                background-color: black;
+                color: $white;
+                margin-top: 16px;
+                &--paypal{
+                    @extend %boton;
+                    margin-top: 16px;
+                    border: 1px solid $grey;
+                }
+            }
+        }
+    }
+    &__extra{
+        width: porcentaje(1256);
+        height: 188px;
+        &__top{
+            width: 100%;
+            height: 88px;
+            border-bottom: 1px solid $grey;
+        }
+        &__bottom{
+            strong{
+                font-family: Avenir;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    }
+    &__p{
+        position: absolute;
+        left: 798px;
+        top: 292px;
+        @extend .body-1;
+    }
+}
+
+@keyframes car {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

@@ -1,6 +1,11 @@
 .sidebar{
     width: porcentaje(391);
     height: 1003px;
+    a{
+        text-decoration: none;
+        color: $white;
+        @extend .button;
+    }
 }
 .data{
     width: 100%;

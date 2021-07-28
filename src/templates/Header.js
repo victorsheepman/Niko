@@ -2,7 +2,7 @@ const Header = ()=>{
     const view = `
         <header class="Header">
             <figure class="Header__logo">
-                <img src="assets/icons/logo.svg" alt="">
+               <a href="/"><img src="assets/icons/logo.svg" alt=""></a>
             </figure>
             <nav class="Header__nav .button">
                 <ul >

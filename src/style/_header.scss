@@ -5,11 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    animation: 2s navbar 0.5s ease-in-out;
+    animation: 2s navbar 0.5s ease-in-out forwards;
     background-color:$white;
     z-index: 5;
     margin-bottom: 40px;
     position: fixed;
+    opacity: 0;
     top: 0;
 
     &__logo{
@@ -71,8 +72,11 @@
 @keyframes navbar {
     0%{
         transform: translateY(-200px);
+        opacity: 0;
     }
     100%{
-        transform: translateY(0px );
+        transform: translateY(0px);
+
+        opacity: 1;
     }
 }

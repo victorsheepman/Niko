@@ -25,10 +25,14 @@
         li{
             list-style: none;
             color:$grey;
+            cursor: pointer;
         }
     }
    
     li:first-child{
+        color: white;
+    }
+    li:hover{
         color: white;
     }
     &__content{

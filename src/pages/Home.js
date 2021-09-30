@@ -6,7 +6,7 @@ const Home = () => {
                         
                         <section class="galery__up">
                             <figure>
-                                <img src="assets/images/video.gif" alt="">
+                                <img src="assets/images/video 1.jpg" alt="">
                             </figure>
                             <figure>
                                 <img src="assets/images/Rectangle 22.jpg" alt="">
